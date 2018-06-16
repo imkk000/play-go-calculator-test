@@ -2,6 +2,14 @@ package calculator
 
 import "testing"
 
+func Test_Add_Input_3_Plus_Minus_2_Should_Be_1(t *testing.T) {
+	number1 := 3
+	number2 := -2
+	expected := 1
+	resultNumber := Add(number1, number2)
+	isEqual(t, expected, resultNumber)
+}
+
 func Test_Add_Input_Minus_1_Plus_1_Should_Be_0(t *testing.T) {
 	number1 := -1
 	number2 := 1
