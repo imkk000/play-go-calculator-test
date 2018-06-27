@@ -2,6 +2,22 @@ package calculator
 
 import "testing"
 
+func Test_Multiply_Input_5_Multiply_By_10_Should_Be_50(t *testing.T) {
+	number1 := 5
+	number2 := 10
+	expected := 50
+	resultNumber := Multiply(number1, number2)
+	isEqual(t, expected, resultNumber)
+}
+
+func Test_Multiply_Input_2_Multiply_By_3_Should_Be_6(t *testing.T) {
+	number1 := 2
+	number2 := 3
+	expected := 6
+	resultNumber := Multiply(number1, number2)
+	isEqual(t, expected, resultNumber)
+}
+
 func Test_Add_Input_3_Plus_Minus_2_Should_Be_1(t *testing.T) {
 	number1 := 3
 	number2 := -2
