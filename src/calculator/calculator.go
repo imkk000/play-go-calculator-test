@@ -1,9 +1,14 @@
 package calculator
 
-func Add(number1, number2 int) int {
-	return number1 + number2
+type Calculator struct {
+	NumberOne int
+	NumberTwo int
 }
 
-func Multiply(number1, number2 int) int {
-	return number1 * number2
+func (c Calculator) Add() int {
+	return c.NumberOne + c.NumberTwo
+}
+
+func (c Calculator) Multiply() int {
+	return c.NumberOne * c.NumberTwo
 }
