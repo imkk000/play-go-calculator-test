@@ -1,44 +1,47 @@
-package calculator
+package calculator_test
 
-import "testing"
+import (
+	. "calculator"
+	"testing"
+)
 
 func Test_Multiply_Input_5_Multiply_By_10_Should_Be_50(t *testing.T) {
-	number1 := 5
-	number2 := 10
+	numberOne := 5
+	numberTwo := 10
 	expected := 50
-	resultNumber := Multiply(number1, number2)
+	resultNumber := Multiply(numberOne, numberTwo)
 	isEqual(t, expected, resultNumber)
 }
 
 func Test_Multiply_Input_2_Multiply_By_3_Should_Be_6(t *testing.T) {
-	number1 := 2
-	number2 := 3
+	numberOne := 2
+	numberTwo := 3
 	expected := 6
-	resultNumber := Multiply(number1, number2)
+	resultNumber := Multiply(numberOne, numberTwo)
 	isEqual(t, expected, resultNumber)
 }
 
 func Test_Add_Input_3_Plus_Minus_2_Should_Be_1(t *testing.T) {
-	number1 := 3
-	number2 := -2
+	numberOne := 3
+	numberTwo := -2
 	expected := 1
-	resultNumber := Add(number1, number2)
+	resultNumber := Add(numberOne, numberTwo)
 	isEqual(t, expected, resultNumber)
 }
 
 func Test_Add_Input_Minus_1_Plus_1_Should_Be_0(t *testing.T) {
-	number1 := -1
-	number2 := 1
+	numberOne := -1
+	numberTwo := 1
 	expected := 0
-	resultNumber := Add(number1, number2)
+	resultNumber := Add(numberOne, numberTwo)
 	isEqual(t, expected, resultNumber)
 }
 
 func Test_Add_Input_1_plus_1_Should_Be_2(t *testing.T) {
-	number1 := 1
-	number2 := 1
+	numberOne := 1
+	numberTwo := 1
 	expected := 2
-	resultNumber := Add(number1, number2)
+	resultNumber := Add(numberOne, numberTwo)
 	isEqual(t, expected, resultNumber)
 }
 
