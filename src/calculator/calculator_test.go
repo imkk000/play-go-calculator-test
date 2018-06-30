@@ -5,6 +5,27 @@ import (
 	"testing"
 )
 
+func Test_Divide_Input_100_Divide_By_11_Should_Be_0(t *testing.T) {
+	expected := 0
+	calculator := Calculator{NumberOne: 100, NumberTwo: 11}
+	resultNumber := calculator.Divide()
+	isEqual(t, expected, resultNumber)
+}
+
+func Test_Divide_Input_10_Divide_By_0_Should_Be_0(t *testing.T) {
+	expected := 0
+	calculator := Calculator{NumberOne: 10, NumberTwo: 0}
+	resultNumber := calculator.Divide()
+	isEqual(t, expected, resultNumber)
+}
+
+func Test_Divide_Input_99_Divide_By_11_Should_Be_9(t *testing.T) {
+	expected := 9
+	calculator := Calculator{NumberOne: 99, NumberTwo: 11}
+	resultNumber := calculator.Divide()
+	isEqual(t, expected, resultNumber)
+}
+
 func Test_Multiply_Input_5_Multiply_By_10_Should_Be_50(t *testing.T) {
 	expected := 50
 	calculator := Calculator{NumberOne: 5, NumberTwo: 10}
